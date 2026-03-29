@@ -65,6 +65,10 @@ elif input_method == "YouTube Linki":
                         'outtmpl': 'temp_yt_audio.%(ext)s',
                         'quiet': True,
                         'noplaylist': True
+                        #JavaScript doğrulamasını atlamak için mobil istemci kullanıyoruz
+                        'extractor_args': {
+                            'youtube': ['player_client=android']
+                        }
                     }
                     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                         info = ydl.extract_info(youtube_url, download=True)
