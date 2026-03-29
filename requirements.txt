@@ -2,3 +2,4 @@ streamlit
 pydub
 numpy
 yt-dlp
+nodejs
