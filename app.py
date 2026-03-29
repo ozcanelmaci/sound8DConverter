@@ -64,7 +64,7 @@ elif input_method == "YouTube Linki":
                         }],
                         'outtmpl': 'temp_yt_audio.%(ext)s',
                         'quiet': True,
-                        'noplaylist': True
+                        'noplaylist': True,
                         #JavaScript doğrulamasını atlamak için mobil istemci kullanıyoruz
                         'extractor_args': {
                             'youtube': ['player_client=android']
